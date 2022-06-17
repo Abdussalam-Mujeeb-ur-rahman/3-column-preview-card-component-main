@@ -1,0 +1,121 @@
+body{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+
+}
+
+/* styling the containers */
+main{
+    width: 60%;
+    padding: 40px;
+
+}
+
+/* styling the links  */
+a{
+    background-color: #ffffff;
+    padding: 15px 20px;
+    border-radius: 50px;
+    text-decoration: none;
+}
+
+
+
+/* styling the first container  */
+main:first-of-type{
+    background-color: hsl(31, 77%, 52%);
+    border-radius: 14px 14px 0px 0px;
+}
+main:first-of-type a{
+    color: hsl(31, 77%, 52%) ;
+}
+main:first-of-type a:hover{
+    border: 1px solid white;
+    background-color: inherit;
+    color: white;
+}
+main:first-of-type a:active{
+    border: 1px solid white;
+    background-color: inherit;
+    color: white;
+}
+
+
+/* styling the second container  */
+main:nth-of-type(2){
+    background-color: hsl(184, 100%, 22%) ;
+}
+main:nth-of-type(2) a{
+    color:hsl(184, 100%, 22%) ;
+}
+main:nth-of-type(2) a:hover{
+    border: 1px solid white;
+    background-color: inherit;
+    color: white;
+}
+main:nth-of-type(2) a:active{
+    border: 1px solid white;
+    background-color: inherit;
+    color: white;
+}
+
+
+
+
+/* styling the third container  */
+main:last-of-type{
+    background-color: hsl(179, 100%, 13%);
+    border-radius: 0px 0px 14px 14px;
+}
+main:last-of-type a{
+    color: hsl(179, 100%, 13%) ;
+}
+main:last-of-type a:hover{
+    border: 1px solid white;
+    background-color: inherit;
+    color: white;
+}
+main:last-of-type a:active{
+    border: 1px solid white;
+    background-color: inherit;
+    color: white;
+}
+
+
+
+
+
+
+
+/* for large screens  */
+@media screen and (min-width: 769px) {
+    body{
+        padding-top: 100px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    
+    }
+
+
+    main{
+       width: 20% ; 
+       height: 300px;
+    }
+
+    /* styling the first container  */
+    main:first-of-type{
+        /* background-color: hsl(31, 77%, 52%); */
+        border-radius: 14px 0px 0px 14px;
+    }
+
+    /* styling the third container  */
+    main:last-of-type{
+        /* background-color: hsl(179, 100%, 13%); */
+        border-radius: 0px 14px 14px 0px;
+    }
+}
